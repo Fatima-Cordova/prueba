@@ -1,5 +1,5 @@
 # INFORMACION
-A continuacion se detallan una serie de puntos a tomar en cuenta para una correcto estandar en el apartado de INFORMACION para Angular.
+A continuacion se detallan una serie de puntos a tomar en cuenta para una correcto estandar o informacion relevante en el apartado de INFORMACION para Angular.
 
 
 ### Aumentar el limite de observacion para linux
