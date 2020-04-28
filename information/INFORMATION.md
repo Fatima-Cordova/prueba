@@ -2,6 +2,15 @@
 A continuacion se detallan una serie de puntos a tomar en cuenta para una correcto estandar en el apartado de INFORMACION para Angular.
 
 
+### Aumentar el limite de observacion para linux
+
+```
+echo 65536 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
+
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+
+
 ### Localizacion
 Evite usar sentencias para el texto de un mismo boton. Por obligacion se recomienda si existe 1 boton reutilizado con distinto texto crear 2 y con una sentencia que evite que se visualize el otro.
 
