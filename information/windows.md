@@ -6,7 +6,7 @@ Es necesario indicarle mediante PowerShell en modo de administrador que habilite
 ```
 Set-ExecutionPolicy RemoteSigned
 ```
-De lo contrario no sera posible usar ng serve para ver nuestros avances en el aplicativo. De lo contrario veremos un error como el siguiente
+De lo contrario no sera posible usar ng serve para ver nuestros avances en el aplicativo y se observara un error como el siguiente
 
 ```
 ng : File C:\Users\nayos\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is disabled on this system. For 
