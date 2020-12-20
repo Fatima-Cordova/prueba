@@ -4,7 +4,7 @@ En la version de windows 10 de la siguiente imagen:
 
 Es necesario indicarle mediante PowerShell en modo de administrador que habilite el siguiente permiso
 ```
-Set-ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
 De lo contrario no sera posible usar ng serve para ver nuestros avances en el aplicativo y se observara un error como el siguiente
 
