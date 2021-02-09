@@ -1,13 +1,33 @@
 # INFORMACION
 A continuacion se detallan una serie de puntos a tomar en cuenta para una correcto estandar o informacion relevante en el apartado de INFORMACION para Angular.
 
-
-### Aumentar el limite de observacion para linux
-
+# Sobre la creacion de modulos, servicios y modulos
+Para crear un modulo se recomienda utilizar el siguiente comando
 ```
-echo 65536 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
+ng g m nameModule --routing
+```
 
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+Modo largo
+```
+ng generate mmodule nameModule --routing
+```
+
+Para generar un servicio se utiliza el siguiente comando
+```
+ng g s nameService --skip-Tests=true
+```
+Modo largo
+```
+ng generate service nameService --skip-Tests=true
+```
+
+Y para generar los componentes
+```
+ng g c nameComponent --skip-Tests=true -v=None
+```
+Modo largo
+```
+ng generate component nameComponent --skip-Tests=true -v=None
 ```
 
 
@@ -17,13 +37,13 @@ Evite usar sentencias para el texto de un mismo boton. Por obligacion se recomie
 
 ```html
 // Manera correcta
-<button mat-raised-button *ngIf="mode=='edit'" class="pull-right btn button-primary" color="primary" ngbTooltip="Editar"  (click)="submit()" [disabled]="!limitFrm.valid" i18n="@@AdministratorLimitBUTTONOne">Editar</button>
+<button mat-raised-button *ngIf="mode=='edit'" class="pull-right btn button-primary" color="primary" ngbTooltip="Editar"  (click)="submit()" [disabled]="!formLimit.valid" i18n="@@AdministratorLimitBUTTONOne">Editar</button>
 
 <button mat-raised-button *ngIf="mode!='edit'" class="pull-right btn button-primary" color="primary" ngbTooltip="Agregar"
-(click)="submit()" [disabled]="!limitFrm.valid" i18n="@@AdministratorLimitBUTTONTwo">Agregar</button>
+(click)="submit()" [disabled]="!formLimit.valid" i18n="@@AdministratorLimitBUTTONTwo">Agregar</button>
 ```
 
 ```html
 // Manera incorrecta
-<button mat-raised-button class="pull-right btn button-primary" color="primary" ngbTooltip="Agregar" (click)="submit()" [disabled]="!limitFrm.valid">{mode=='edit'?"Editar":"Agregar"}}</button>
+<button mat-raised-button class="pull-right btn button-primary" color="primary" ngbTooltip="Agregar" (click)="submit()" [disabled]="!formLimit.valid">{mode=='edit'?"Editar":"Agregar"}}</button>
 ```

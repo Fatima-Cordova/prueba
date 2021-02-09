@@ -4,6 +4,8 @@ Repositorio que contiene buenas practicas y contenido informativo para el orden 
 
 ## Tabla de contenidos
 
-- [Estilo](https://git.hightech-corp.com/web-dev/angular-best-practices/tree/master/style/STYLE.md)
-- [Seguridad](https://git.hightech-corp.com/web-dev/angular-best-practices/tree/master/security/SECURITY.md)
-- [Informacion](https://git.hightech-corp.com/web-dev/angular-best-practices/tree/master/information/INFORMATION.md)
+- [Estilo](style/STYLE.md)
+- [Seguridad](security/SECURITY.md)
+- [Informacion](information/INFORMATION.md)
+- [Windows](information/windows.md)
+- [Linux](information/linux.md)
